@@ -16,29 +16,14 @@ public class SeleccionTask implements Task {
         actor.attemptsTo(
 
                 SelectRandom.click(),
-                //Wait.until()
                 ObtenerNombreProd.on(),
-                //Click.on(BTN_CARRITO),
                 Click.on(BTN_REGRESAR),
-
                 ScrollIN.on(),
                 SelectRandom.click(),
-
-
                 ObtenerNombreProd2.on(),
                 Click.on(BTN_CARRITO),
                 Click.on(BTN_REGRESAR),
-                Click.on(BTN_CARRO)
-
-
-
-
-                /*SelectRandom.click(),
-                ObtenerNombreProd2.on()*/
-
-
-
-        );
+                Click.on(BTN_CARRO));
         System.out.println(ObtenerNombreProd.on());
     }
     public static SeleccionTask on(){
